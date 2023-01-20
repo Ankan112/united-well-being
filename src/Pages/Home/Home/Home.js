@@ -1,13 +1,16 @@
 import React from 'react';
+import BookSession from '../../BookSession/BookSession';
 import HomeParagraph from '../../HomeParagraph/HomeParagraph';
 import Review from '../../Review/Review';
+import Banner from '../Banner/Banner';
 
 const Home = () => {
     return (
         <div>
-            <h1>this is home</h1>
+            <Banner></Banner>
             <HomeParagraph></HomeParagraph>
             <Review></Review>
+            <BookSession></BookSession>
         </div>
     );
 };
