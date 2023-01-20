@@ -1,16 +1,22 @@
 import React from 'react';
 import banner from '../../../img/banner.png'
+import Miama from '../../../img/generatedtext.png'
 
 const Banner = () => {
     return (
         <div>
-            <div className="hero min-h-screen bg-base-200">
-                <div className="hero-content flex-col lg:flex-row-reverse">
-                    <img src={banner} alt='' className="max-w-sm rounded-lg shadow-2xl" />
-                    <div>
-                        <h1 className="text-5xl font-bold">Box Office News!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button className="btn btn-primary">Get Started</button>
+            <div style={{ backgroundColor: '#E7E6E4' }} className="hero mt-20 mb-32">
+                <div className="hero-content p-0 flex-col lg:flex-row-reverse">
+                    <img src={banner} alt='' className="relative" />
+                    <div className='flex justify-center items-center'>
+                        <div className='text-center'>
+                            <h1 className="text-4xl italic font-bold"><img className='h-40' src={Miama} alt="" /></h1>
+                            <p className="my-6 text-2xl">From the comfort of your own space</p>
+                            <p className="my-6 text-xl">Individual therapy for adults</p>
+                            <div className='text-center mx-auto w-52 mt-14'>
+                                <p style={{ backgroundColor: '#6D2E46' }} className='text-base py-4 px-12 text-white'>Book Session</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
